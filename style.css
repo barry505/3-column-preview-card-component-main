@@ -10,8 +10,9 @@ html {
 }
 
 body {
-  max-width: 375px;
+  max-width: 400px;
   margin: 0 auto;
+  min-height: 100vh;
   background-color: hsl(0, 0%, 95%);
 }
 
@@ -33,7 +34,7 @@ p {
 }
 
 card {
-  padding: 40px 60px;
+  padding: 40px 60px 30px;
 }
 
 card.sedans {
@@ -53,6 +54,7 @@ button {
   padding: 10px 30px;
   height: 40px;
   margin: 20px 0 0;
+  border: 1px solid hsl(0, 0%, 95%);
   border-radius: 20px;
 }
 
@@ -66,4 +68,33 @@ card.suvs button {
 
 card.luxury button {
   color: hsl(179, 100%, 13%);
+}
+
+card.sedans button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(31, 77%, 52%);
+}
+
+card.suvs button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(184, 100%, 22%);
+}
+
+card.luxury button:hover {
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 900px;
+  }
+  
+  main {
+    flex-direction: row;
+  }
+
+  card {
+    
+  }
 }
