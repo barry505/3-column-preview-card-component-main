@@ -12,7 +12,7 @@ html {
 body {
   max-width: 400px;
   margin: 0 auto;
-  min-height: 100vh;
+  max-height: 100vh;
   background-color: hsl(0, 0%, 95%);
 }
 
@@ -33,19 +33,19 @@ p {
   color: hsla(0, 0%, 100%, 0.75);
 }
 
-card {
+.card {
   padding: 40px 60px 30px;
 }
 
-card.sedans {
+.card.sedans {
   background-color: hsl(31, 77%, 52%);
 }
 
-card.suvs {
+.card.suvs {
   background-color: hsl(184, 100%, 22%);
 }
 
-card.luxury {
+.card.luxury {
   background-color: hsl(179, 100%, 13%);
 }
 
@@ -58,43 +58,41 @@ button {
   border-radius: 20px;
 }
 
-card.sedans button {
+.card.sedans button {
   color: hsl(31, 77%, 52%);
 }
 
-card.suvs button {
+.card.suvs button {
   color: hsl(184, 100%, 22%);
 }
 
-card.luxury button {
+.card.luxury button {
   color: hsl(179, 100%, 13%);
 }
 
-card.sedans button:hover {
+.card.sedans button:hover {
   color: hsl(0, 0%, 95%);
   background-color: hsl(31, 77%, 52%);
 }
 
-card.suvs button:hover {
+.card.suvs button:hover {
   color: hsl(0, 0%, 95%);
   background-color: hsl(184, 100%, 22%);
 }
 
-card.luxury button:hover {
+.card.luxury button:hover {
   color: hsl(0, 0%, 95%);
   background-color: hsl(179, 100%, 13%);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 960px) {
   body {
-    width: 900px;
+    max-width: 960px;
   }
   
   main {
+    width: 960px;
+    margin-top: 50px;
     flex-direction: row;
-  }
-
-  card {
-    
   }
 }
