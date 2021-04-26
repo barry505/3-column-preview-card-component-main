@@ -1,0 +1,79 @@
+/* 
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+
+  Colors
+
+  Primary
+  Bright orange: hsl(31, 77%, 52%)
+  Dark cyan: hsl(184, 100%, 22%)
+  Very dark cyan: hsl(179, 100%, 13%)
+
+  Neutral
+  Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
+  Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+  Typography
+  Body Copy - Font size: 15px
+*/
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+h2 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.cards {
+  color: hsl(0, 0%, 95%);
+}
+
+.card1, .card2, .card3 {
+  padding: 3rem;
+}
+
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.cards .btn {
+  background-color:hsl(0, 0%, 95%);
+}
+
+.card1 .btn {
+  color:hsl(31, 77%, 52%);
+}
+
+.card2 .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.card3 .btn {
+  color: hsl(179, 100%, 13%);
+}
+.card1 .btn:hover {
+  background-color:hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card2 .btn:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+}
+
+.card3 .btn:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
