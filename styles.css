@@ -77,3 +77,9 @@ h2 {
   color: hsl(0, 0%, 95%);
 }
 
+@media (max-width: 767px) {
+  body {
+    width: 85%;
+    margin: auto;
+  }
+}
